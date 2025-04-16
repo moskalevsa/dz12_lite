@@ -1,0 +1,10 @@
+Advanced IVR Ports HTTP Triggers the web analog to Unified CM Telephonyto invoke and run a workflow. HTTP triggers enable
+a Unified CCX to receive a customer
+contact request through an HTTPrequest.
+This approach allows web users to be offered service through a “click to talk to an agent” button.
+Information collected using the web
+a customer call back number, account number,shopping cart content,
+and so on) can be passed to the Unified CCX script to allow
+customer profile-based routing and a data-rich window.
+These contacts can be prioritized and routed using the same methods
+available to normal inbound voice callers.
