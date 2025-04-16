@@ -22,13 +22,13 @@ print (f'текущая директория: {os.getcwd()}')
 os.chdir('poject_root')
 print (f'смена текущей директории на: {os.getcwd()}')
 
-#Начало записи файлов
+#Начало чтения файлов
 filelog = 'logs/dz_log.log'
-message = (f'Начало записи файлов в директорию {os.path.join('project_root/data/raw')}\n')
+message = (f'Начало чтения файлов в директорию {os.path.join('project_root/data/raw')}\n')
 #print(message)
 write_log(filelog, message)
 
-#Запись файлов в директорию raw
+#чтение файлов в директорию raw
 #Смена текущей директории
 os.chdir('data/raw')
 print (f'смена текущей директории на: {os.getcwd()}')
