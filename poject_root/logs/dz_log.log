@@ -1,0 +1,23 @@
+16.04.2025, 13:13 INFO: Создана директория project_root.
+16.04.2025, 13:13 INFO: Создана директория logs.
+16.04.2025, 13:13 INFO: Создана директория data.
+16.04.2025, 13:13 INFO: Создана директория raw.
+16.04.2025, 13:13 INFO: Создана директория processed.
+16.04.2025, 13:13 INFO: Создана директория backups.
+16.04.2025, 13:13 INFO: Создана директория output.
+16.04.2025, 13:14 INFO: Начало записи файлов в директорию project_root/data/raw
+16.04.2025, 13:14 INFO: INFO: файл architectura_approach.txt записан
+16.04.2025, 13:14 INFO: INFO: файл mother_parish.txt записан
+16.04.2025, 13:14 INFO: INFO: файл CiscoDesignGuide.txt записан
+16.04.2025, 13:14 INFO: Окончание записи файлов в директорию project_root/data/raw
+16.04.2025, 13:14 INFO: Начало чтения файлов в директорию project_root/data/raw
+16.04.2025, 13:14 INFO: Окончание чтения файлов из директорию project_root/data/raw
+16.04.2025, 13:14 INFO: INFO: файл architectura_approach.txt прочитан
+16.04.2025, 13:14 INFO: INFO: файл CiscoDesignGuide.txt прочитан
+16.04.2025, 13:14 INFO: INFO: файл mother_parish.txt прочитан
+16.04.2025, 13:14 INFO: Начало записи преобразованных файлов в директорию project_root/data/processed
+16.04.2025, 13:14 INFO: Преобразование текстов завершено
+16.04.2025, 13:14 INFO: Окончание записи файлов из директорию project_root/data/raw
+16.04.2025, 13:14 INFO: INFO: файл architectura_approach_processed.txt записан
+16.04.2025, 13:14 INFO: INFO: файл CiscoDesignGuide_processed.txt записан
+16.04.2025, 13:14 INFO: INFO: файл mother_parish_processed.txt записан
