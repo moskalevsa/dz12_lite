@@ -127,17 +127,15 @@ contentfile1 = Contentfile (file_list_proc[0]
                                 ,file_last[0]
                                 )
 
-#print(file_to_dict(contentfile1))
+print(f'Результат работы функции filfile_to_ dict:\n {file_to_dict(contentfile1)}')
 
 json_string = json.dumps(file_to_dict(contentfile1), indent=4)
 
-print(type(json_string))
+print(f'Печать результата сериализации: \n {json_string}')
 
-#print(f'строка json {json_string} ')
-
-json_string_text = json_string.decode(encoding= 'utf-8')
+#json_string_text = json_string.decode(encoding= 'utf-8')
 #print (encjs)
-print(f'строка json {json_string_text} ')
+#print(f'строка json {json_string_text} ')
 
 
 
