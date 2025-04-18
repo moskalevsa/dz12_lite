@@ -21,7 +21,7 @@ message = (f'Начало записи файлов в директорию {os.
 #print(message)
 write_log(filelog, message)
 
-#Запись файлов в директорию raw
+#Запись файлов в директорию out
 #Смена текущей директории
 os.chdir('data/raw')
 print (f'смена текущей директории на: {os.getcwd()}')

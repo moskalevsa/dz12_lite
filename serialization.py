@@ -11,8 +11,11 @@ Cкрипт для сериализации содержимого всех фа
 """
 import json
 import os
+from fileinput import filename
 from idlelib.iomenu import encoding
 import time
+from pprint import pprint
+
 import ipykernel
 from xml.etree.ElementTree import indent
 from dzlog import  write_log
@@ -23,9 +26,11 @@ from dzfilework import read_file
 from dzfilework import string_process
 from dataclasses import dataclass, asdict
 
-class Contentfile:
+
+
+class File_data:
     """
-    Класс содержащий содержимое  файла
+    Класс содержащий данные  файла
     """
     def __init__(self, filename :str, text_isx : list[str], text_proc :list[str], filesize : int, lastmod :str ):
         self.filename = filename
@@ -34,21 +39,54 @@ class Contentfile:
         self.filesize = filesize
         self.lastmod = lastmod
 
+    def get_print_str(self):
+            """
+            получить f строку для печати    :return:
+            """
+            output1 = f'file name : {self.filename}\n original text : {self.text_isx} \n text : {self.text_proc}\n '
+            output2 =f'byte size : {self.filesize}\n last change : {self.lastmod}\n'
+            output = output1 + output2
+            return output
+
     def __str__(self):
-        return {'имя файла' : self.filename
-                ,'исходный текст' : self.text_isx
-                ,'текст' : self.text_proc
-                ,'размер' : self.filesize
-                ,'последнее изменение' : self.lastmod
-                }
+         return self.get_print_str()
+
+class File_data_list:
+    """
+     Класс содержащий список данных классов
+    """
+    def __init__(self, f_data_list : list[:File_data]):
+        self.f_data_list = f_data_list
+    def __str__(self):
+        output = f'Список данных файлов:\n'
+        for file in self.f_data_list:
+            output = output + file.get_print_str()
+        return output
+    def get_f_data_list(self):
+        return self.f_data_list
 
 
-def file_to_dict (file : Contentfile):
-    return { 'имя файла' : file.filename
-            ,'исходный текст' : file.text_isx
-            ,'текст' : file.text_proc
-            ,'размер в байтах' : file.filesize
-            ,'время последнего изменения': file.lastmod
+def file_to_dict (file : File_data):
+    """
+    перевод в словарь данных файла
+    """
+    return { "file name" : file.filename
+            ,"original text" : file.text_isx
+            ,"text" : file.text_proc
+            ,"last change" : file.filesize
+            ,"last change": file.lastmod
+            }
+
+def filedatalist_to_dict (filedata_list :File_data_list):
+    """
+    Перевод в словарь списка данных файла
+    """
+    list_dict = [ ]
+    file_list = filedata_list.get_f_data_list()
+    for i in range(len(file_list)):
+        dict = file_to_dict(file_list[i])
+        list_dict.append(dict)
+    return { "List of data files" :  listdict
             }
 
 # Определение текущей директории
@@ -70,17 +108,16 @@ for fl in os.listdir(file_read_dir):
 print(f'Список исходных файлов заполнен:\n {file_list_isx}')
 
 #Получение списка исходных текстов
-text_read_isx =[] #Список прочитанных исходных текстов
+text_list_read_isx =[] #Список прочитанных исходных текстов
 for i in range(len(file_list_isx)):
     flr  = file_list_isx[i]
     encflr = determ_encoding(flr)  # Определение кодировки
     textf = read_file(flr, encr = encflr)
-    text_read_isx.append(textf)
+    text_list_read_isx.append(textf)
 
-print (text_read_isx[0])
+print (text_list_read_isx[0])
 
 # Смена текщей дрректории . на data/processed
-#Смена текущей директории
 os.chdir('..')
 os.chdir('..')
 os.chdir('data/processed')
@@ -94,50 +131,69 @@ for fl in os.listdir(file_read_dir):
 print(f'Список обработанных файлов заполнен:\n {file_list_proc}')
 
 #Получение списка обработанных текстов
-text_read_proc =[] #Список прочитанных исходных текстов
+text_list_read_proc =[] #Список прочитанных исходных текстов
 for i in range(len(file_list_proc)):
     flr  = file_list_proc[i]
     encflr = determ_encoding(flr)  # Определение кодировки
     textf = read_file(flr,  encflr)
-    text_read_proc.append(textf)
+    text_list_read_proc.append(textf)
 
-print(text_read_proc[0])
+print(text_list_read_proc[0])
 
 #Получение списка размеров файлов в байтах
-file_size = []   #Список размеров файлов в байтах
+file_list_size = []   #Список размеров файлов в байтах
 for i in range(len(file_list_proc)):
     flr  = file_list_proc[i]
     fsize = os.path.getsize(flr)
-    file_size.append(fsize)
-print(f'Список размеров файлов заполнен:\n {file_size}')
+    file_list_size.append(fsize)
+print(f'Список размеров файлов заполнен:\n {file_list_size}')
 
 #Получение даты последнего изменеия файла
-file_last = []   #Список размеров файлов в байтах
+file_list_last = []   #Список размеров файлов в байтах
 for i in range(len(file_list_proc)):
     flr  = file_list_proc[i]
     md_time = os.path.getmtime(flr)
     rd_time = time.ctime(md_time)
     print(f"Last modified: {rd_time}")
-    file_last.append(rd_time)
-print(f'Список дат последнего изменеия файлов заполнен:\n {file_last}')
-contentfile1 = Contentfile (file_list_proc[0]
-                                ,text_read_isx[0]
-                                ,text_read_proc[0]
-                                ,file_size[0]
-                                ,file_last[0]
-                                )
+    file_list_last.append(rd_time)
+print(f'Список дат последнего изменеия файлов заполнен:\n {file_list_last}')
+os.chdir('..')
+# Получить список файлоа
+list_faildata = []
+for i in range(len(file_list_proc)):
+    filedata = File_data ( file_list_proc[i]
+                       ,text_list_read_isx[i]
+                       ,text_list_read_proc[i]
+                        ,file_list_size[i]
+                        ,file_list_last[i]
+                       )
+    list_faildata.append(filedata)
 
-print(f'Результат работы функции filfile_to_ dict:\n {file_to_dict(contentfile1)}')
+datafile_list = File_data_list(list_faildata)
 
-json_string = json.dumps(file_to_dict(contentfile1), indent=4)
+print(datafile_list)
+#json_string = json.dumps(file_to_dict(file1), indent= 4)
 
-print(f'Печать результата сериализации: \n {json_string}')
+#print(json_string)
 
-#json_string_text = json_string.decode(encoding= 'utf-8')
-#print (encjs)
-#print(f'строка json {json_string_text} ')
+#Смена текщей дрректории . на # Смена текщей дрректории . на output/
+#os.chdir('..')
+print (f'смена текущей директории на: {os.getcwd()}')
+#os.chdir('output/')
+#print (f'смена текущей директории на: {os.getcwd()}')
 
+#filew = repr('test.json')
+#print(filew)
 
+#with open(filew, 'w', encoding = 'utf-8') as file:
+#    file.write(json_string)
+
+#with open(filew, 'r', encoding = 'utf-8') as file:
+#    loaded_data = json.load(file )
+
+#print (type(loaded_data))
+
+#pprint(loaded_data)
 
 
 

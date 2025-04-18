@@ -15,6 +15,7 @@ def write_file(filew, text : list, enc = 'utf-8', ):
          message = f'INFO: файл {filew} записан\n'
     return message
 
+
 def determ_encoding (checkfile):
     """
     определение кодировки файла
