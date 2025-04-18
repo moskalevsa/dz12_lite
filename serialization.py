@@ -62,7 +62,7 @@ class File_data_list:
         for file in self.f_data_list:
             output = output + file.get_print_str()
         return output
-    def get_f_data_list(self):
+    def get_file_data_list(self):
         return self.f_data_list
 
 
@@ -70,24 +70,26 @@ def file_to_dict (file : File_data):
     """
     перевод в словарь данных файла
     """
-    return { "file name" : file.filename
-            ,"original text" : file.text_isx
-            ,"text" : file.text_proc
-            ,"last change" : file.filesize
-            ,"last change": file.lastmod
-            }
+    dict = {}
+    dict.update({ "1. file name" : file.filename })
+    dict.update({ "2. original text" : file.text_isx })
+    dict.update({ "3. text" : file.text_proc })
+    dict.update({"4. file size" : file.filesize })
+    dict.update({"5. last change": file.lastmod})
+    return dict
 
 def filedatalist_to_dict (filedata_list :File_data_list):
     """
     Перевод в словарь списка данных файла
     """
-    list_dict = [ ]
-    file_list = filedata_list.get_f_data_list()
+    list_dict = []
+    result_dict = {}
+    file_list = filedata_list.get_file_data_list()
     for i in range(len(file_list)):
         dict = file_to_dict(file_list[i])
         list_dict.append(dict)
-    return { "List of data files" :  listdict
-            }
+    result_dict.update({"Список файлов" : list_dict})
+    return    result_dict
 
 # Определение текущей директории
 print (f'текущая директория: {os.getcwd()}')
@@ -138,8 +140,6 @@ for i in range(len(file_list_proc)):
     textf = read_file(flr,  encflr)
     text_list_read_proc.append(textf)
 
-print(text_list_read_proc[0])
-
 #Получение списка размеров файлов в байтах
 file_list_size = []   #Список размеров файлов в байтах
 for i in range(len(file_list_proc)):
@@ -171,29 +171,28 @@ for i in range(len(file_list_proc)):
 
 datafile_list = File_data_list(list_faildata)
 
-print(datafile_list)
-#json_string = json.dumps(file_to_dict(file1), indent= 4)
-
-#print(json_string)
+# проверка преобразования класса в словарь
+dictlist = filedatalist_to_dict(datafile_list)
+pprint(dictlist)
 
 #Смена текщей дрректории . на # Смена текщей дрректории . на output/
-#os.chdir('..')
+os.chdir('..')
 print (f'смена текущей директории на: {os.getcwd()}')
-#os.chdir('output/')
-#print (f'смена текущей директории на: {os.getcwd()}')
+os.chdir('output/')
+print (f'смена текущей директории на: {os.getcwd()}')
 
-#filew = repr('test.json')
-#print(filew)
+filew = 'processed_data.json'
+print(filew)
 
-#with open(filew, 'w', encoding = 'utf-8') as file:
-#    file.write(json_string)
+with open(filew, 'w', encoding = 'utf-8') as file:
+    json.dump(dictlist, file)
 
-#with open(filew, 'r', encoding = 'utf-8') as file:
-#    loaded_data = json.load(file )
+with open(filew, 'r', encoding = 'utf-8') as file:
+    loaded_data = json.load(file )
 
-#print (type(loaded_data))
+print (type(loaded_data))
 
-#pprint(loaded_data)
+pprint(loaded_data)
 
 
 
