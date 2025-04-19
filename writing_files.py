@@ -9,7 +9,8 @@ from dzfilework import write_file
 
 
 # Определение текущей директории
-print (f'текущая директория: {os.getcwd()}')
+maindir = os.getcwd()
+print (f'текущая директория: {maindir}')
 
 #Смена текущей директории
 os.chdir('poject_root')
@@ -26,8 +27,6 @@ write_log(filelog, message)
 os.chdir('data/raw')
 print (f'смена текущей директории на: {os.getcwd()}')
 
-
-
 # Запись файла архитектурный подход(начало)
 text = ['В общем и целом архитектурный подход основывается на выявлении и формулировании\n',
         'архитектуры деятельности предприятия, которая определяет архитектуру информационных систем\n',
@@ -39,16 +38,20 @@ text = ['В общем и целом архитектурный подход о�
 namefile = 'architectura_approach.txt'
 messagearh = write_file(namefile, text)
 
-# Запись файла архитектурный подход(начало)
-text = ['В общем и целом архитектурный подход основывается на выявлении и формулировании\n',
-        'архитектуры деятельности предприятия, которая определяет архитектуру информационных систем\n',
-        'а та, в свою очередь, определяет технологическую архитектуру.\n',
-        'На каждом из этих трех уровней выделяются аспекты:\n',
-        'архитектуры данных, архитектуры информационной безопасности, архитектуры интеграции и взаимодействия,\n',
-        'а также архитектуры результативности и эффективности.' ]
-
-namefile = 'architectura_approach.txt'
-messagearh = write_file(namefile, text)
+# Запись части документации Cisco Unified Contact Center Express Design Guide,
+text = ['Advanced IVR Ports HTTP Triggers the web analog to Unified CM Telephony',
+        'to invoke and run a workflow. HTTP triggers enable\n',
+        'a Unified CCX to receive a customer\n',
+        'contact request through an HTTPrequest.\n',
+        'This approach allows web users to be offered service through a “click to talk to an agent” button.\n',
+        'Information collected using the web\n',
+        'a customer call back number, account number,shopping cart content,\n',
+        'and so on) can be passed to the Unified CCX script to allow\n',
+        'customer profile-based routing and a data-rich window.\n',
+        'These contacts can be prioritized and routed using the same methods\n',
+        'available to normal inbound voice callers.' ]
+namefile = 'CiscoDesignGuide.txt'
+messagecisco = write_file(namefile, text)
 
 # Запись файла приход мамы)
 text = ['Мама приходит в дом,\n',
@@ -71,29 +74,13 @@ text = ['Мама приходит в дом,\n',
 namefile = 'mother_parish.txt'
 messagemth = write_file(namefile, text)
 
-# Запись части документации Cisco Unified Contact Center Express Design Guide,
-text = ['Advanced IVR Ports HTTP Triggers the web analog to Unified CM Telephony',
-        'to invoke and run a workflow. HTTP triggers enable\n',
-        'a Unified CCX to receive a customer\n',
-        'contact request through an HTTPrequest.\n',
-        'This approach allows web users to be offered service through a “click to talk to an agent” button.\n',
-        'Information collected using the web\n',
-        'a customer call back number, account number,shopping cart content,\n',
-        'and so on) can be passed to the Unified CCX script to allow\n',
-        'customer profile-based routing and a data-rich window.\n',
-        'These contacts can be prioritized and routed using the same methods\n',
-        'available to normal inbound voice callers.' ]
-namefile = 'CiscoDesignGuide.txt'
-messagecisco = write_file(namefile, text)
-
 #Смена текущей директории
-os.chdir('..')
-os.chdir('..')
-print (f'смена текущей директории на: {os.getcwd()}\n')
+os.chdir( maindir)
+os.chdir('poject_root')
+print (f'смена текущей директории на: {os.getcwd()}')
 filelog = 'logs/dz_log.log'
 
 #Начало внесение результатов записи в жкрнал
-
 write_log(filelog, messagearh)
 write_log(filelog, messagemth)
 write_log(filelog, messagecisco)

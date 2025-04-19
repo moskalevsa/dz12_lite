@@ -3,7 +3,10 @@
 """
 import os
 import datetime
+from contextlib import chdir
+
 from dzlog import  write_log
+
 
 def create_dir(dirname :str):
     isnew = True
@@ -16,9 +19,10 @@ def create_dir(dirname :str):
     return isnew
 
 # Определение текущей директории
-print (f'текущая директория: {os.getcwd()}')
+maindir = os.getcwd()
+print (f'текущая директория: {maindir}')
 
-# сщздание директории poject_root
+# создание директории poject_root
 isprojct_rootnew = create_dir('poject_root')
 
 #Смена текущей директории
@@ -37,6 +41,7 @@ if islognew:
    message = 'Создана директория logs.\n'
    write_log(filelog,message)
 #Создание остальных директорий задания
+
 # Создание директории data
 isdatanew = create_dir('data')
 if isdatanew:
@@ -53,8 +58,10 @@ israwnew = create_dir('raw')
 isprocessednew = create_dir('processed')
 
 #Смена текущей директории
-os.chdir('..')
+os.chdir( maindir)
+os.chdir('poject_root')
 print (f'смена текущей директории на: {os.getcwd()}')
+
 #Журналирование создания директорий raw и processed
 if israwnew:
     message = 'Создана директория raw.\n'
