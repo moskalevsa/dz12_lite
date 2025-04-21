@@ -11,20 +11,11 @@ Cкрипт для сериализации содержимого всех фа
 """
 import json
 import os
-from fileinput import filename
-from idlelib.iomenu import encoding
 import time
 from pprint import pprint
-import ipykernel
-from xml.etree.ElementTree import indent
-from dzlog import  write_log
-from dzfilework import write_file
 from dzfilework import determ_encoding
 from dzfilework import read_file
-from dzfilework import read_file
-from dzfilework import string_process
-from dataclasses import dataclass, asdict
-
+from dzlog import write_log
 
 
 class File_data:
