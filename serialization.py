@@ -223,7 +223,7 @@ write_log(filelog, message)
 message = f'Список дат последнего изменеия файлов заполнен\n'
 write_log(filelog, message)
 
-message = f'Oбъект - Cписок объектов данные файла сохдан\n'
+message = f'Oбъект - Cписок объектов данные файла заполнен\n'
 write_log(filelog, message)
 
 
