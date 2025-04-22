@@ -34,8 +34,6 @@ schema1 = {
     }
 }
 
-
-
 fileinfo1 = {'file name': 234
     ,'full file path': 'proiect_root/data/processed/CiscoDesignGuide_processed.txt'
     ,'last change': 'Tue Apr 22 12:02:30 2025'}
