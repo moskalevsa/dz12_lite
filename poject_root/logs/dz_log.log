@@ -1,94 +1,47 @@
-19.04.2025, 12:48 INFO: Создана директория project_root.
-19.04.2025, 12:48 INFO: Создана директория logs.
-19.04.2025, 12:48 INFO: Создана директория data.
-19.04.2025, 12:48 INFO: Создана директория raw.
-19.04.2025, 12:48 INFO: Создана директория processed.
-19.04.2025, 12:48 INFO: Создана директория backups.
-19.04.2025, 12:48 INFO: Создана директория output.
-19.04.2025, 12:56 INFO: Начало записи файлов в директорию project_root/data/raw
-19.04.2025, 12:56 INFO: INFO: файл architectura_approach.txt записан
-19.04.2025, 12:56 INFO: INFO: файл mother_parish.txt записан
-19.04.2025, 12:56 INFO: INFO: файл CiscoDesignGuide.txt записан
-19.04.2025, 12:56 INFO: Окончание записи файлов в директорию project_root/data/raw
-19.04.2025, 13:08 INFO: Начало чтения файлов в директорию project_root/data/raw
-19.04.2025, 13:08 INFO: Окончание чтения файлов из директорию project_root/data/raw
-19.04.2025, 13:08 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 13:08 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 13:08 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 13:08 INFO: Начало записи преобразованных файлов в директорию project_root/data/processed
-19.04.2025, 13:08 INFO: Преобразование тестов  и имен файлов завершено
-19.04.2025, 13:08 INFO: Преобразование тестов  и имен файлов завершено
-19.04.2025, 13:08 INFO: INFO: файл architectura_approach_processed.txt записан
-19.04.2025, 13:08 INFO: INFO: файл CiscoDesignGuide_processed.txt записан
-19.04.2025, 13:08 INFO: INFO: файл mother_parish_processed.txt записан
-19.04.2025, 13:18 INFO: Начало чтения файлов из директории project_root/data/raw
-19.04.2025, 13:18 INFO: Окончание чтения файлов из директорию project_root/data/raw
-19.04.2025, 13:18 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 13:18 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 13:18 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 13:18 INFO: Начало записи преобразованных файлов в директорию project_root/data/processed
-19.04.2025, 13:18 INFO: Преобразование тестов  и имен файлов завершено
-19.04.2025, 13:18 INFO: Начало записи файлов в дирекстрию project_root/data/processed 
-19.04.2025, 13:18 INFO: INFO: файл architectura_approach_processed.txt записан
-19.04.2025, 13:18 INFO: INFO: файл CiscoDesignGuide_processed.txt записан
-19.04.2025, 13:18 INFO: INFO: файл mother_parish_processed.txt записан
-19.04.2025, 13:19 INFO: Начало чтения файлов из директории project_root/data/raw
-19.04.2025, 13:19 INFO: Окончание чтения файлов из директорию project_root/data/raw
-19.04.2025, 13:19 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 13:19 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 13:19 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 13:19 INFO: Начало записи преобразованных файлов в директорию project_root/data/processed
-19.04.2025, 13:19 INFO: Преобразование тестов  и имен файлов завершено
-19.04.2025, 13:19 INFO: Начало записи файлов в дирекстрию project_root/data/processed 
-19.04.2025, 13:19 INFO: INFO: файл architectura_approach_processed.txt записан
-19.04.2025, 13:19 INFO: INFO: файл CiscoDesignGuide_processed.txt записан
-19.04.2025, 13:19 INFO: INFO: файл mother_parish_processed.txt записан
-19.04.2025, 13:19 INFO: INFO: файл mother_parish_processed.txt записан
-19.04.2025, 13:20 INFO: Начало чтения файлов из директории project_root/data/raw
-19.04.2025, 13:20 INFO: Окончание чтения файлов из директорию project_root/data/raw
-19.04.2025, 13:20 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 13:20 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 13:20 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 13:20 INFO: Начало записи преобразованных файлов в директорию project_root/data/processed
-19.04.2025, 13:20 INFO: Преобразование тестов  и имен файлов завершено
-19.04.2025, 13:20 INFO: Начало записи файлов в дирекстрию project_root/data/processed 
-19.04.2025, 13:20 INFO: INFO: файл architectura_approach_processed.txt записан
-19.04.2025, 13:20 INFO: INFO: файл CiscoDesignGuide_processed.txt записан
-19.04.2025, 13:20 INFO: INFO: файл mother_parish_processed.txt записан
-19.04.2025, 13:21 INFO: Начало чтения файлов из директории project_root/data/raw
-19.04.2025, 13:21 INFO: Окончание чтения файлов из директорию project_root/data/raw
-19.04.2025, 13:21 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 13:21 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 13:21 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 13:21 INFO: Начало записи преобразованных файлов в директорию project_root/data/processed
-19.04.2025, 13:21 INFO: Преобразование тестов  и имен файлов завершено
-19.04.2025, 13:21 INFO: Начало записи файлов в дирекстрию project_root/data/processed 
-19.04.2025, 13:21 INFO: INFO: файл architectura_approach_processed.txt записан
-19.04.2025, 13:21 INFO: INFO: файл CiscoDesignGuide_processed.txt записан
-19.04.2025, 13:21 INFO: INFO: файл mother_parish_processed.txt записан
-19.04.2025, 13:21 INFO: Окончание записи файлов в директорию project_root/data/processed
-19.04.2025, 14:25 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 14:25 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 14:25 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 14:27 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 14:27 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 14:27 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 14:27 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 14:27 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 14:27 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 14:27 INFO: Прочитаны исходные тексты19.04.2025, 14:35 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 14:35 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 14:35 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 14:35 INFO: Прочитаны исходные тексты19.04.2025, 16:56 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 16:56 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 16:56 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 16:56 INFO: Прочитаны исходные тексты19.04.2025, 17:53 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 17:53 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 17:53 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 17:53 INFO: Прочитаны исходные тексты19.04.2025, 17:57 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 17:57 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 17:57 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 17:57 INFO: Прочитаны исходные тексты19.04.2025, 18:00 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:00 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:00 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:00 INFO: Прочитаны исходные тексты19.04.2025, 18:01 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:01 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:01 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:01 INFO: Прочитаны исходные тексты19.04.2025, 18:06 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:06 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:06 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:06 INFO: Прочитаны исходные тексты19.04.2025, 18:09 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:09 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:09 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:09 INFO: Прочитаны исходные тексты19.04.2025, 18:10 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:10 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:10 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:10 INFO: Прочитаны исходные тексты19.04.2025, 18:13 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:13 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:13 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:13 INFO: Прочитаны исходные тексты19.04.2025, 18:16 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:16 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:16 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:16 INFO: Прочитаны исходные тексты19.04.2025, 18:17 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:17 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:17 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:17 INFO: Прочитаны исходные тексты19.04.2025, 18:20 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:20 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:20 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:20 INFO: Прочитаны исходные тексты19.04.2025, 18:21 INFO: Исходный текст из файла architectura_approach.txt прочитан19.04.2025, 18:21 INFO: Исходный текст из файла CiscoDesignGuide.txt прочитан19.04.2025, 18:21 INFO: Исходный текст из файла mother_parish.txt прочитан19.04.2025, 18:21 INFO: Прочитаны исходные тексты19.04.2025, 19:19 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 19:19 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 19:19 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 19:19 INFO: INFO: файл architectura_approach_processed.txt прочитан
-19.04.2025, 19:19 INFO: INFO: файл CiscoDesignGuide_processed.txt прочитан
-19.04.2025, 19:19 INFO: INFO: файл mother_parish_processed.txt прочитан
-19.04.2025, 19:19 INFO: Списки  текстов составлены19.04.2025, 19:22 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 19:22 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 19:22 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 19:22 INFO: INFO: файл architectura_approach_processed.txt прочитан
-19.04.2025, 19:22 INFO: INFO: файл CiscoDesignGuide_processed.txt прочитан
-19.04.2025, 19:22 INFO: INFO: файл mother_parish_processed.txt прочитан
-19.04.2025, 19:22 INFO: Списки  текстов составлены19.04.2025, 19:24 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 19:24 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 19:24 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 19:24 INFO: INFO: файл architectura_approach_processed.txt прочитан
-19.04.2025, 19:24 INFO: INFO: файл CiscoDesignGuide_processed.txt прочитан
-19.04.2025, 19:24 INFO: INFO: файл mother_parish_processed.txt прочитан
-19.04.2025, 19:24 INFO: Списки  текстов составлены19.04.2025, 19:45 INFO: INFO: файл architectura_approach.txt прочитан
-19.04.2025, 19:45 INFO: INFO: файл CiscoDesignGuide.txt прочитан
-19.04.2025, 19:45 INFO: INFO: файл mother_parish.txt прочитан
-19.04.2025, 19:45 INFO: INFO: файл architectura_approach_processed.txt прочитан
-19.04.2025, 19:45 INFO: INFO: файл CiscoDesignGuide_processed.txt прочитан
-19.04.2025, 19:45 INFO: INFO: файл mother_parish_processed.txt прочитан
-19.04.2025, 19:45 INFO: Списки  текстов составлены19.04.2025, 19:45 INFO: Список размеров файлов в байтах составлен19.04.2025, 19:45 INFO: Список дат последнего изменеия файлов заполнен19.04.2025, 19:45 INFO: Oбъект - Cписок объектов данные файла сохдан19.04.2025, 19:45 INFO: проведена сериализация в файл processed_data.json19.04.2025, 19:45 INFO: проведена десериализация bp файлf processed_data.json
+22.04.2025, 16:20 INFO: Создана директория project_root.
+22.04.2025, 16:20 INFO: Создана директория logs.
+22.04.2025, 16:20 INFO: Создана директория data.
+22.04.2025, 16:20 INFO: Создана директория raw.
+22.04.2025, 16:20 INFO: Создана директория processed.
+22.04.2025, 16:20 INFO: Создана директория backups.
+22.04.2025, 16:20 INFO: Создана директория output.
+22.04.2025, 16:23 INFO: Начало записи файлов в директорию project_root/data/raw
+22.04.2025, 16:23 INFO: INFO: файл architectura_approach.txt записан
+22.04.2025, 16:23 INFO: INFO: файл mother_parish.txt записан
+22.04.2025, 16:23 INFO: INFO: файл CiscoDesignGuide.txt записан
+22.04.2025, 16:23 INFO: Окончание записи файлов в директорию project_root/data/raw
+22.04.2025, 16:25 INFO: Начало чтения файлов из директории project_root/data/raw
+22.04.2025, 16:25 INFO: Окончание чтения файлов из директорию project_root/data/raw
+22.04.2025, 16:25 INFO: INFO: файл architectura_approach.txt прочитан
+22.04.2025, 16:25 INFO: INFO: файл CiscoDesignGuide.txt прочитан
+22.04.2025, 16:25 INFO: INFO: файл mother_parish.txt прочитан
+22.04.2025, 16:25 INFO: Начало записи преобразованных файлов в директорию project_root/data/processed
+22.04.2025, 16:25 INFO: Преобразование текстов  и имен файлов завершено
+22.04.2025, 16:25 INFO: Начало записи файлов в директорию project_root/data/processed 
+22.04.2025, 16:25 INFO: INFO: файл architectura_approach_processed.txt записан
+22.04.2025, 16:25 INFO: INFO: файл CiscoDesignGuide_processed.txt записан
+22.04.2025, 16:25 INFO: INFO: файл mother_parish_processed.txt записан
+22.04.2025, 16:25 INFO: Окончание записи файлов в директорию project_root/data/processed
+22.04.2025, 16:27 INFO: INFO: файл architectura_approach.txt прочитан
+22.04.2025, 16:27 INFO: INFO: файл CiscoDesignGuide.txt прочитан
+22.04.2025, 16:27 INFO: INFO: файл mother_parish.txt прочитан
+22.04.2025, 16:27 INFO: INFO: файл architectura_approach_processed.txt прочитан
+22.04.2025, 16:27 INFO: INFO: файл CiscoDesignGuide_processed.txt прочитан
+22.04.2025, 16:27 INFO: INFO: файл mother_parish_processed.txt прочитан
+22.04.2025, 16:27 INFO: Списки  текстов составлены
+22.04.2025, 16:27 INFO: Список размеров файлов в байтах составлен
+22.04.2025, 16:27 INFO: Список дат последнего изменеия файлов заполнен
+22.04.2025, 16:27 INFO: Oбъект - Cписок объектов данные файла заполнен
+22.04.2025, 16:27 INFO: проведена сериализация в файл processed_data.json
+22.04.2025, 16:27 INFO: проведена десериализация из файла processed_data.json
+22.04.2025, 16:31 INFO: Определены аривируемая директория .\data и архив backups/backup20250422
+ 22.04.2025, 16:31 INFO: создан архив backups/backup20250422
+ 22.04.2025, 16:31 INFO: архив backups/backup20250422.zip распакован в директорию data2
+ 22.04.2025, 16:35 INFO: Список имен файлов заполнен
+22.04.2025, 16:35 INFO: Список путей файлов заполнен:
+22.04.2025, 16:35 INFO: Список размеров файлов в байтах составлен
+22.04.2025, 16:35 INFO: Список дат последнего изменеия файлов заполнен
+22.04.2025, 16:35 INFO: Oбъект - Cписок объектов данные файла заполнен
+22.04.2025, 16:35 INFO: проведена сериализация в файл file_info.json
+22.04.2025, 16:35 INFO: проведена десериализация из файла file_info.json
+22.04.2025, 16:41 INFO: INFO: файл report.txt записан
